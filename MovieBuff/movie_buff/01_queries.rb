@@ -46,7 +46,7 @@ def biggest_cast
     .select(:id, :title)
     .joins(:actors)
     .group('movies.id')
-    .order('COUNT(actors.id) DESC')
+    .order('COUNT(actors.id) DESC') 
     .limit(3)
 end
 
